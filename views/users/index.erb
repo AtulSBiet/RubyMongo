@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>App42PaaSRubyMongoDBSample</title>
+  <link rel="stylesheet" href="stylesheets/style.css" type="text/css" /> 
+  <script src="javascripts/jquery.js" type="text/javascript"></script>
+</head>
+<body>
+  <div class="App42PaaS_header_wrapper">
+      <div class="App42PaaS_header_inner">
+          <div class="App42PaaS_header">  
+                <div class="logo">
+                    <a href="/"><img border="0" alt="App42PaaS" src="images/logo.png"></img></a> 
+                </div>     
+            </div> 
+      </div>
+  </div>
+  <div class="App42PaaS_body_wrapper">
+      <div class="App42PaaS_body">
+          <div class="App42PaaS_body_inner">
+
+            <h1>Listing users</h1>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Desc</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <% @users.each do |user| %>
+                  <tr>
+                    <td><%= user.name %></td>
+                    <td><%= user.email %></td>
+                    <td><%= user.desc %></td>
+                  </tr>
+                <% end %>
+              </tbody>
+            </table>
+
+            <br>
+            <a href="/new">New User!</a> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
