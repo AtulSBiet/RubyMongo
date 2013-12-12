@@ -12,7 +12,7 @@ Mongoid.configure do |config|
   # production
   config.sessions = {
     :default => {
-    :hosts => ["10.0.2.12:40477"], :database => "t", :username => 'avuxdpj8izsqqrrj', :password => 'eclrsu49fk7lzwulidl8ae3ig18sd4w0'
+    :hosts => ["192.168.2.202:28360"], :database => "t", :username => 'apdbkc6nh1n615w8', :password => 'anedr3t0ucy93zjyy1buy44s3bwxi9r6'
   }
 
 }
